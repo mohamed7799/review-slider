@@ -1,0 +1,72 @@
+@import './resst';
+@import './mixins';
+
+$prime-color:#00b2ff;
+
+hr {
+    width: 5%;
+    height: 3px;
+    border: 1px solid $prime-color;
+    background-color: $prime-color;
+    margin-top: .5rem;
+    margin-bottom: 4rem;
+}
+
+#review-card {
+    width: 50%;
+    box-shadow: 5px 5px 5px #c5c5c5, -5px -5px 5px #c5c5c5;
+    background-color: white;
+}
+
+#review-card__photo {
+    background-image: url(/imgs/1.jpg);
+    background-size: cover;
+    background-position: top;
+    height: 100px;
+    width: 100px;
+    margin: 1rem auto;
+    border-radius: 50%;
+    box-shadow: 5px -2px $prime-color
+}
+
+#review-card__name {
+    margin-bottom: .5rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+#review-card__job {
+    color: $prime-color;
+    margin-bottom: 1rem;
+}
+
+#review-card__review {
+    line-height: 1.5rem;
+    color: #333333;
+    margin-bottom: .5rem;
+}
+
+#review-card__arrows {
+    width: 15%;
+    color: $prime-color;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#review-card__sup {
+    border: 2px solid $prime-color;
+    width: 20%;
+    color: $prime-color;
+    font-weight: bold;
+    transition: .3s;
+    padding: .5rem 1rem;
+    margin: 1rem auto;
+    border-radius: 5px;
+
+    &:hover {
+        color: white;
+        background-color: $prime-color;
+        cursor: pointer;
+    }
+}
