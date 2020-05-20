@@ -61,7 +61,7 @@ sub.addEventListener("click", () => {
 
 
 sup.addEventListener("click", () => {
-    console.log("clicked")
+
     let newIndex = 0;
     while (newIndex === index) {
         newIndex = get_random_int(data.length);
