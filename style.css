@@ -58,7 +58,6 @@ hr {
 }
 
 #review-card__photo {
-  background-image: url(/imgs/1.jpg);
   background-size: cover;
   background-position: top;
   height: 100px;
@@ -103,6 +102,10 @@ hr {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+#review-card__arrows > *:hover {
+  cursor: pointer;
 }
 
 #review-card__sup {
